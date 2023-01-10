@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+body {
+    background-color: bisque;
+}
+
+.recuadro_gris {
+    background-color: rgb(115, 115, 115);
+    width: 85vw;
+    height: 300px;
+    margin: 50px auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.circulo {
+    background-color: #fff;
+    width: 170px;
+    height: 170px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.mi_foto {
+    margin-top: 4px;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    border: 1px solid #000;
+}
+
+.recuadro_blanco {
+    position: relative;
+    top: -150px;
+    border: 2px solid #000;
+    width: 50vw;
+    height: 200px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.recuadro_blanco h4 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: rgb(115, 115, 115);
+    margin-top: 10px;
+}
+
+.recuadro_blanco h3 {
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+}
+
+.recuadro_blanco .iconos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recuadro_blanco .iconos img {
+    width: 50px;
+    margin: 30px auto;
+    transition: .4s ease;
+}
+
+.recuadro_blanco .iconos img:hover {
+    transform: scale(1.2);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    margin: auto;
+    position: relative;
+    top: -120px;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cuadros_inf {
+    width: 25vw;
+    height: 200px;
+    border: 2px solid #000;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadros_inf p {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+.cuadros_inf img {
+    width: 100px;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.cuadros_inf img:hover {
+    transform: translate(0,10px);
+}
+
+
+
+
+@media (max-width: 700px) {
+    .recuadro_blanco {
+        width: 72vw;
+        height: 150px;
+        top: -130px;
+    }
+
+    .recuadro_blanco .iconos img {
+        width: 30px;
+        margin: 30px auto;
+    }
+
+    .recuadro_blanco h3 {
+        font-size: 1.4em;
+    }
+
+    .recuadro_blanco h4 {
+        font-size: 1em;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadros_inf {
+        width: 85vw;
+        margin-bottom: 15px;
+    }
+
+}

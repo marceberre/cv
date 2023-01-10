@@ -1,0 +1,95 @@
+
+body {
+    background-color: bisque;
+}
+
+.recuadro_gris {
+    background-color: rgb(115, 115, 115);
+    width: 85vw;
+    height: 190px;
+    margin: 50px auto;
+    text-align: center;
+    padding-top: 20px;
+    border-top-left-radius: 100px;
+    border-end-start-radius: 100px;
+}
+
+.recuadro_gris p{
+    font-size: 4em;
+    color:#fff;
+    position: relative;
+    top: -117px;
+    margin: 0 auto;
+}
+
+.circulo {
+    background-color: #fff;
+    width: 170px;
+    height: 170px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.mi_foto {
+    margin-top: 4px;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    border: 1px solid #000;
+}
+
+
+section,
+.titulo {
+    background-color: rgb(125, 125, 125);
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.titulo{
+    margin: 20px auto;
+}
+
+.cuadro {
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    margin:20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(209, 206, 206);
+}
+
+.cuadro:hover{
+    border: 1px solid red;
+}
+
+.cuadro a img{
+    width: 80px;
+    margin: 8px;
+}
+
+.cuadro .texto{
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cuadro1,
+.cuadro2,
+.cuadro3,
+.cuadro4,
+.cuadro5{
+    background-color: #fff;
+}
+
+.volver{
+    text-align: center;
+}
+
+
+@media (max-width: 700px) {
+
+}
