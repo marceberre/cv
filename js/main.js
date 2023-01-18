@@ -2,7 +2,7 @@ document.getElementById('logo1').addEventListener('mouseover',function(){
     mostrar_info('Hola, mi nombre es','Marcelo Berretta');
 })
 document.getElementById('logo2').addEventListener('mouseover',function(){
-    mostrar_info('Mi mail','marcelo.berretta@hotmail.com');
+    mostrar_info('Mi mail','mrcb@live.com.ar');
 })
 document.getElementById('logo3').addEventListener('mouseover',function(){
     mostrar_info('Mi dirección','Roca 123, CABA');
