@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #fff;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    -webkit-box-shadow: inset 0px -50px 24px -28px rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0px -50px 24px -28px rgba(255, 255, 255, 1);
+    box-shadow: inset 0px -50px 24px -28px rgba(255, 255, 255, 1);
+    z-index: 100;
+}
+
+.nombre {
+    font-family: 'WindSong', cursive;
+    margin-left: 2em;
+    width: 200px;
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #7e7d7d;
+    font-size: .7em;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+ul li a:hover {
+    color: #000;
+}
+
+ul li a:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+ul li a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #7e7d7d;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.pantallas {
+    width: 100%;
+    margin: auto;
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+.foto {
+    width: 120px;
+    height: 120px;
+    background-image: url('./images/marce1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+    transition: all .6s;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.foto:hover {
+    background-image: url('./images/marce.png');
+    opacity: .8;
+}
+
+/* Estilos para el inicio  */
+
+.centro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+
+/* Estilos portafolio */
+
+
+
+.p2 p {
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5em;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    margin: auto;
+}
+
+.container .card {
+    width: 330px;
+    /* height: 430px; */
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+    width: 330px;
+    height: 220px;
+}
+
+
+.container .card h4 {
+    font-weight: 600;
+}
+
+.container .card p {
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}
+
+/* Estilos de la tabla de certificaciones */
+
+.tabla {
+    margin: auto;
+    width: 75%;
+}
+
+.tabla caption {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.tabla caption img {
+    width: 70px;
+}
+
+.tabla tr th {
+    text-align: left;
+    background: #e6e6e6;
+    padding: .5em;
+}
+
+.tabla tr .expedido {
+    display: none;
+}
+
+.tabla tr td img {
+    width: 40px;
+}
+
+.tabla tr th:nth-child(4),
+.tabla tr td:nth-child(4) {
+    text-align: center;
+}
+
+/* Estilos para la página de contacto  */
+
+.p4 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.p4 a img {
+    width: 40px;
+    margin: 1em;
+    opacity: .5;
+}
+
+.p4 a img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .centro img {
+        width: 70%;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,
+    li a.active {
+        background: none;
+        color: red;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .tabla th:nth-child(2),
+    .tabla td:nth-child(2),
+    .tabla th:nth-child(3),
+    .tabla td:nth-child(3) {
+        display: none;
+    }
+
+}
